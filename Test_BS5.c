@@ -1,34 +1,19 @@
-This c code converts recurring decimal into a simplified fraction:
-
-  #include <stdio.h>
-  #include <math.h>
-
-// Function to find the greatest common divisor (GCD) of two numbers
-int gcd(int a, int b) {
-    if (b == 0) {
-        return a;
-    }
-    return gcd(b, a % b);
-}
+#include <stdio.h>
+#include <math.h>
 
 int main() {
-    double decimal = 0.11111;  // Replace with your recurring decimal
-    int precision = 5;  // Number of decimal places
+    double radius;
+    double circumference;
 
-    // Convert the recurring decimal to an integer by multiplying by 10^precision
-    int numerator = decimal * pow(10, precision);
-    int denominator = pow(10, precision);
+    // Input the radius of the circle
+    printf("Enter the radius of the circle: ");
+    scanf("%lf", &radius);
 
-    // Simplify the fraction by finding the greatest common divisor (GCD)
-    int common_divisor = gcd(numerator, denominator);
+    // Calculate the circumference using the approximation 22/7 for π
+    circumference = 2 * (22.0 / 7.0) * radius;
 
-    // Divide both numerator and denominator by the common divisor
-    numerator /= common_divisor;
-    denominator /= common_divisor;
-
-    // Print the simplified fraction
-    printf("Simplified Fraction: %d/%d\n", numerator, denominator);
+    // Display the result
+    printf("The circumference of the circle is: %.2lf\n", circumference);
 
     return 0;
 }
-
