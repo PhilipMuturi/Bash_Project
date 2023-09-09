@@ -1,2 +1,4 @@
-# Bash_Project
+Bash Project
 Bash related projects
+
+Things are getting even better
