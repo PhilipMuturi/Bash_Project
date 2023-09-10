@@ -1,1 +1,17 @@
 And when the going gets tough the tough gets going
+
+Quickly set up GitHub SSH example
+One of the most secure ways to communicate across the public internet is  to use SSH.
+This is why GitHub SSH key setup is a top priority for  users of the popular Git service.
+Fortunately, the GitHub and SSH key configuration process is relatively  straightforward, especially on a Linux distribution such as Ubuntu.
+GitHub SSH key setup steps
+To setup GitHub SSH keys and use them on Ubuntu, follow these steps:
+1.	Create a GitHub SSH key pair with the ssh-keygen command
+2.	Copy the value of the public SSH key to the clipboard
+3.	Login to GitHub and navigate to your account settings
+4.	Click on the SSH and GPG link
+5.	Click Add Key to register the public SSH key with your account
+6.	Name the key and paste the copied  value into the text field
+Save your changes
+In your Git client, use the SSH based GitHub URL to clone your repo
+
